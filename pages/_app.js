@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import AppLayout from 'layouts/app'
+import AppLayout from 'layouts/App'
 
 function App({ Component, pageProps }) {
   return (
