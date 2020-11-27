@@ -26,8 +26,8 @@ export default function Home() {
         <div style={{ height: 'min-content', width: '100%', display: 'flex', justifyContent: 'center' }}>
           <div style={{ textAlign: 'center', backgroundColor: '#fff', padding: '25px 20px', borderRadius: '10px', boxShadow: '1px 1px 15px #5656567d' }}>
             <h2 style={{ color: '#0070f3', fontWeight: '600' }}>Newman</h2>
-            <h2 style={{ color: '#0070f3', fontWeight: '600' }}>Jose 1</h2>
-            <h2 style={{ color: '#0070f3', fontWeight: '600' }}>Jose 2</h2>
+            <h2 style={{ color: '#0070f3', fontWeight: '600' }}>Jose</h2>
+            <h2 style={{ color: '#0070f3', fontWeight: '600' }}>Josue</h2>
             <h2 style={{ color: '#0070f3', fontWeight: '600' }}>Kevin Blanco</h2>
           </div>
         </div>
