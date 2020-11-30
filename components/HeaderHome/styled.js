@@ -8,7 +8,6 @@ export const HeaderHomeStyled = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #eee;
   border-radius: 10px;
   background-image: url('/banner-home.png');
   background-position: center;

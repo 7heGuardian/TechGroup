@@ -16,7 +16,7 @@ export const ArticleStyled = styled.article`
 
   @media screen and (min-width: 320px) and (max-width: 550px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 250px 1fr;
+    grid-template-rows: 154px 1fr;
     justify-items: center;
   }
 `
