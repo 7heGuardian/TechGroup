@@ -1,12 +1,11 @@
-import { GlobalStyled, AppLayoutStyled } from './styled';
+import Footer from 'components/Footer'
+import AppLayoutStyled from './styled'
 
-function AppLayout({ children }) {
+export default function AppLayout({ children }) {
   return (
     <AppLayoutStyled>
-      <GlobalStyled />
       {children}
+      <Footer />
     </AppLayoutStyled>
   )
 }
-
-export default AppLayout
