@@ -9,10 +9,10 @@ export default function ListArticlesHome() {
       <ListArticlesStyled>
         <li style={{ overflow: 'hidden' }}>
           <ArticleStyled >
-            <figure style={{ backgroundColor: 'blue', width: '250px', height: '100%', borderRadius: '10px' }}>
+            <figure style={{ width: '250px', height: '100%', borderRadius: '10px' }}>
               <Link href='/post/elaboracion-de-una-wiki'>
                 <a>
-                  <img style={{ borderRadius: '10px' }} src='#' alt='imagen' width='300px' />
+                  <img style={{ borderRadius: '10px' }} src='/thumb-post-wiki.png' alt='imagen' width='100%' />
                 </a>
               </Link>
             </figure>

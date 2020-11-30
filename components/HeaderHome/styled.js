@@ -10,4 +10,8 @@ export const HeaderHomeStyled = styled.header`
   align-items: center;
   background-color: #eee;
   border-radius: 10px;
+  background-image: url('/banner-home.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `
