@@ -11,7 +11,7 @@ export default function PostItem() {
       </Head>
 
       <PostPageLayout>
-        <h1 style={{ textAlign: 'center', fontSize: '28px' }}>Eleaboracion de una wiki</h1>
+        <h1 style={{ textAlign: 'center', fontSize: '28px' }}>Elaboracion de una wiki</h1>
         <MetaDataPostPage>Meta Description</MetaDataPostPage>
         <PostPageDescription >
           <p>

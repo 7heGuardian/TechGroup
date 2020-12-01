@@ -6,6 +6,7 @@ function App({ Component, pageProps }) {
     <>
       <Head>
         <meta charSet="utf-8" />
+        <meta http-equiv="Content-Language" content="es" />
         <meta name="description" content="Elaboracion de una wiki" />
         <meta name="keywords" content="wiki, elaboracion de una wiki, proyecto unexca, carrera informatica" />
         <meta name="author" content="equipo 6" />
