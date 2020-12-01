@@ -1,8 +1,11 @@
 import { ButtonToSendComment, CommentToSendStyled, SendCommentPostStyled } from "./styled"
 
-export default function SendCommentPost({ input, setInput, handleSubmit }) {
+export default function SendCommentPost({ input, setInput, handleSubmit, commentError }) {
   return (
     <SendCommentPostStyled>
+      {
+        commentError && <small>Comentario vacio.</small>
+      }
       <CommentToSendStyled
         value={input}
         onChange={e => setInput(e.target.value)}

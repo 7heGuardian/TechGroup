@@ -6,7 +6,7 @@ import { MetaDataPostPage, PostPageDescription, PostPageImageDescription } from 
 import Link from 'next/link'
 
 export default function PostItem() {
-  const [comments, setComments] = useState(['hola', 'hola2'])
+  const [comments, setComments] = useState([])
 
   useEffect(() => {
     db

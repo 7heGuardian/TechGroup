@@ -8,16 +8,22 @@ import ListCommentsPost from "components/ListCommentsPost"
 
 export default function PostPageLayout({ children, comments }) {
   const [input, setInput] = useState('')
+  const [commentError, setCommentError] = useState(false)
 
   const handleSubmit = e => {
     e.preventDefault()
 
-    db.collection('wikiComments').add({
-      text: input,
-      createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
-    })
+    if (!input === '' && !input === ' ') {
 
-    setInput('')
+      db.collection('wikiComments').add({
+        text: input,
+        createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
+      })
+      setInput('')
+    } else {
+      setCommentError(true)
+      setInput('')
+    }
   }
 
   return (
@@ -34,8 +40,13 @@ export default function PostPageLayout({ children, comments }) {
               input={input}
               setInput={setInput}
               handleSubmit={handleSubmit}
+              commentError={commentError}
             />
-            <ListCommentsPost comments={comments} />
+            {
+              comments.length === 0
+                ? <h4>Cargando comentarios...</h4>
+                : <ListCommentsPost comments={comments} />
+            }
           </section>
 
           <section style={{ marginTop: '50px', display: 'flex', width: '100%', height: '100%', justifyContent: 'center', alignItems: 'center' }}>
