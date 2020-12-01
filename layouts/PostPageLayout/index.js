@@ -19,7 +19,7 @@ export default function PostPageLayout({ children, comments }) {
 
       setTimeout(() => {
         setCommentError(false)
-      }, 6000)
+      }, 4000)
 
     } else {
       db.collection('wikiComments').add({
