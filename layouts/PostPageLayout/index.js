@@ -16,6 +16,11 @@ export default function PostPageLayout({ children, comments }) {
     if (input === '' || input === ' ') {
       setCommentError(true)
       setInput('')
+
+      setTimeout(() => {
+        setCommentError(false)
+      }, 6000)
+
     } else {
       db.collection('wikiComments').add({
         text: input,
