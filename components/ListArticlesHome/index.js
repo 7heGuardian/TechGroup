@@ -18,7 +18,7 @@ export default function ListArticlesHome() {
             </figure>
 
             <div style={{ width: '100%', height: 'min-content', margin: '20px 0 auto 0' }}>
-              <h2 style={{ fontSize: '18px', width: 'fit-content', backgroundColor: '#9393939c', borderRadius: '4px', padding: '5px' }}>
+              <h2 style={{ fontSize: '18px', width: 'fit-content', backgroundColor: '#eee', borderRadius: '4px', padding: '5px' }}>
                 <Link href='/post/elaboracion-de-una-wiki'>
                   <a style={{ textDecoration: 'none', color: '#2d2d2d' }}>Elaboracion de una wiki</a>
                 </Link>
