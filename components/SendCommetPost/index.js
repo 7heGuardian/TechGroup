@@ -4,7 +4,7 @@ export default function SendCommentPost({ input, setInput, handleSubmit, comment
   return (
     <SendCommentPostStyled>
       {
-        commentError && <small>Comentario vacio.</small>
+        commentError && <small style={{ fontSize: '14px', color: '#ff4444' }}>Inserte un comentario valido.</small>
       }
       <CommentToSendStyled
         value={input}

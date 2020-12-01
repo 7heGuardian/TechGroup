@@ -13,15 +13,15 @@ export default function PostPageLayout({ children, comments }) {
   const handleSubmit = e => {
     e.preventDefault()
 
-    if (!input === '' && !input === ' ') {
-
+    if (input === '' || input === ' ') {
+      setCommentError(true)
+      setInput('')
+    } else {
       db.collection('wikiComments').add({
         text: input,
         createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
       })
-      setInput('')
-    } else {
-      setCommentError(true)
+      setCommentError(false)
       setInput('')
     }
   }
