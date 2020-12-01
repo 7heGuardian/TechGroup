@@ -16,7 +16,7 @@ export const PostPageDescription = styled.section`
   }
 
   @media screen and (min-width: 320px) and (max-width: 500px){
-    width: 95%;
+    width: 98%;
 
     & p {
       padding: 0 10px;

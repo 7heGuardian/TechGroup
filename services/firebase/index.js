@@ -1,5 +1,6 @@
-import * as firebase from 'firebase'
+import firebase from 'firebase/app'
 import 'firebase/firestore'
+import 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyB4i1hFp884Dg2y7ItTZFAvOtvVWsqaQRE",
@@ -13,65 +14,45 @@ const firebaseConfig = {
 };
 
 !firebase.apps.length && firebase.initializeApp(firebaseConfig)
+export const db = firebase.firestore()
+export const auth = firebase.auth()
+export const provider = new firebase.auth.GoogleAuthProvider()
 
-const db = firebase.firestore()
+// const mapUserFromFirebaseAuthToUser = (user) => {
+//   const { displayName, email, photoURL, uid } = user
 
-const mapUserFromFirebaseAuthToUser = (user) => {
-  const { displayName, email, photoURL, uid } = user
+//   return {
+//     avatar: photoURL,
+//     username: displayName,
+//     email,
+//     uid,
+//   }
+// }
 
-  return {
-    avatar: photoURL,
-    username: displayName,
-    email,
-    uid,
-  }
-}
+// export const onAuthStateChanged = (onChange) => {
+//   return firebase
+//     .auth()
+//     .onAuthStateChanged(user => {
+//       const normalizeUser = user ?
+//         mapUserFromFirebaseAuthToUser(user) : null
 
-export const onAuthStateChanged = (onChange) => {
-  return firebase
-    .auth()
-    .onAuthStateChanged(user => {
-      const normalizeUser = user ?
-        mapUserFromFirebaseAuthToUser(user) : null
+//       onChange(normalizeUser)
+//     })
+// }
 
-      onChange(normalizeUser)
-    })
-}
+// export const loginWithGoogle = () => {
+//   const googleProvider = new firebase.auth.GoogleAuthProvider()
+//   return firebase.auth().signInWithPopup(googleProvider)
+// }
 
-
-export const loginWithGithub = () => {
-  const githubProvider = new firebase.auth.GithubAuthProvider()
-  return firebase.auth().signInWithPopup(githubProvider)
-}
-
-export const addDevit = ({ avatar, content, userId, userName }) => {
-  return db.collection("devits").add({
-    avatar,
-    content,
-    userId,
-    userName,
-    createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
-    likesCount: 0,
-    sharedCount: 0,
-  })
-}
-
-export const fetchLastesDevits = () => {
-  return db.collection('devits')
-    .get()
-    .then(({ docs }) => {
-      return docs.map(doc => {
-        const id = doc.id
-        const data = doc.data()
-        const { createdAt } = data
-        const date = new Date(createdAt.seconds * 1000)
-        const normalizedCreatedAt = new Intl.DateTimeFormat('es-VE').format(date)
-
-        return {
-          ...data,
-          id,
-          createdAt: normalizedCreatedAt
-        }
-      })
-    })
-}
+// export const addPostComment = ({ avatar, content, userId, userName }) => {
+//   return db.collection('wikiComments').add({
+//     avatar,
+//     content,
+//     userId,
+//     userName,
+//     createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
+//     likesCount: 0,
+//     sharedCount: 0,
+//   })
+// }

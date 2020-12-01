@@ -259,6 +259,11 @@ export default function AppLayoutStyled({ children }) {
             color: #000;
             padding: 0.2em 0;
         }
+
+        a{
+            text-decoration: none;
+            color: #7b7b7b;
+        }
       `}
             />
             {children}

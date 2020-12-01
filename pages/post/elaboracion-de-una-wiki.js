@@ -1,8 +1,35 @@
+import { useEffect, useState } from 'react'
+import { db } from 'services/firebase'
+import Head from 'next/head'
 import PostPageLayout from 'layouts/PostPageLayout'
 import { MetaDataPostPage, PostPageDescription, PostPageImageDescription } from 'layouts/PostPageLayout/styled'
-import Head from 'next/head'
+import Link from 'next/link'
 
 export default function PostItem() {
+  const [comments, setComments] = useState(['hola', 'hola2'])
+
+  useEffect(() => {
+    db
+      .collection('wikiComments')
+      .orderBy('createdAt', 'desc')
+      .onSnapshot(snap => {
+        console.log(snap)
+
+        setComments(snap.docs.map(doc => {
+          const id = doc.id
+          const data = doc.data()
+          const { createdAt } = data
+          const date = new Date(createdAt.seconds * 1000)
+          const normalizedCreatedAt = new Intl.DateTimeFormat('es-VE').format(date)
+
+          return {
+            ...data,
+            id,
+            createdAt: normalizedCreatedAt
+          }
+        }))
+      })
+  }, [])
 
   return (
     <>
@@ -10,8 +37,8 @@ export default function PostItem() {
         <title>Elaboracion de una wiki</title>
       </Head>
 
-      <PostPageLayout>
-        <h1 style={{ textAlign: 'center', fontSize: '28px' }}>Elaboracion de una wiki</h1>
+      <PostPageLayout comments={comments}>
+        <h1 style={{ textAlign: 'center', fontSize: '28px' }}>Elaboracion de una wiki</h1> <small><Link href='/'><a>Ir al inicio</a></Link></small>
         <MetaDataPostPage>Meta Description</MetaDataPostPage>
         <PostPageDescription >
           <p>
