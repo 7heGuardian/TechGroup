@@ -1,10 +1,10 @@
-import HeaderPostPage from "components/HeaderPostPage"
-import { useState } from "react"
-import { db } from "services/firebase"
+import HeaderPostPage from 'components/HeaderPostPage'
+import { useState } from 'react'
+import { db } from 'services/firebase'
 import firebase from 'firebase/app'
-import { BgHeaderPostPage } from "./styled"
-import SendCommentPost from "components/SendCommetPost"
-import ListCommentsPost from "components/ListCommentsPost"
+import { BgHeaderPostPage } from './styled'
+import SendCommentPost from 'components/SendCommetPost'
+import ListCommentsPost from 'components/ListCommentsPost'
 
 export default function PostPageLayout({ children, comments }) {
   const [input, setInput] = useState('')

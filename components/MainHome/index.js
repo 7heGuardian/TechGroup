@@ -1,9 +1,9 @@
-import ListArticlesHome from "components/ListArticlesHome";
-import { MainHomeStyled, TagSectionStyled, MainLayoutStyled, TagStyled } from "./styled";
+import ListArticlesHome from 'components/ListArticlesHome'
+import { MainStyled, TagSectionStyled, MainLayoutStyled, TagStyled } from './styled'
 
 export default function MainHome() {
   return (
-    <MainHomeStyled>
+    <MainStyled>
       <MainLayoutStyled>
         <ListArticlesHome />
 
@@ -14,7 +14,8 @@ export default function MainHome() {
             <TagStyled>Tecnologia</TagStyled>
           </ul>
         </TagSectionStyled>
+
       </MainLayoutStyled>
-    </MainHomeStyled>
+    </MainStyled>
   )
 }

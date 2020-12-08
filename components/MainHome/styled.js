@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 
-export const MainHomeStyled = styled.main`
+export const MainStyled = styled.main`
   height: 100%;
   min-height: 50vh;
   width: 100%;

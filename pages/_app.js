@@ -13,6 +13,7 @@ function App({ Component, pageProps }) {
         <meta name="copyright" content="equipo 6" />
         <meta name="robots" content="index" />
         <meta name="robots" content="follow" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
       </Head>
