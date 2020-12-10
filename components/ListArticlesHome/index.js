@@ -1,21 +1,21 @@
 import Link from 'next/link'
-import { ArticleStyled, ListArticlesLayoutStyled, ListArticlesStyled } from './styled'
+import { ArticleStyled, ListArticlesLayoutStyled, ListArticlesStyled, ArticleThumbnail } from './styled'
 
 export default function ListArticlesHome() {
   return (
     <ListArticlesLayoutStyled>
-      <h3 style={{ color: '#2b2d42', fontSize: '16px', fontWeight: '700' }}>MAS RECIENTE</h3>
+      <span style={{ color: '#2b2d42', fontSize: '12px', fontWeight: '700' }}>MAS RECIENTE</span>
 
       <ListArticlesStyled>
         <li style={{ overflow: 'hidden' }}>
           <ArticleStyled >
-            <figure style={{ width: '240px', height: '100%', borderRadius: '0px 16px' }}>
+            <ArticleThumbnail>
               <Link href='/post/elaboracion-de-una-wiki'>
                 <a>
                   <img style={{ borderRadius: '0px 16px' }} src='/1_DBff-fZ7TtXwf9r-Aem1_A.jpeg' alt='imagen' width='100%' height='144px' />
                 </a>
               </Link>
-            </figure>
+            </ArticleThumbnail>
 
             <div style={{ width: '100%', height: 'min-content', margin: 'auto' }}>
               <h2 style={{ fontFamily: 'Playfair Display', fontSize: '24px', marginBottom: '24px'}}>
@@ -28,7 +28,7 @@ export default function ListArticlesHome() {
                 a través del navegador web. Los usuarios pueden crear, modificar y borrar un mismo
                 texto que comparten.
               </p>
-              <p>9 de noviembre del 2020</p>
+              <p>10 de noviembre del 2020</p>
             </div>
           </ArticleStyled>
         </li>

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <FooterStyled>
       <BrandStyled>
-        <h3 style={{ fontSize: '32px', color: 'white', fontFamily: 'Playfair Display'}}>Technogroup.</h3>
+        <h1 style={{ fontSize: '32px', color: 'white'}}>Technogroup.</h1>
         <div style={{ display: 'flex', flexWrap: 'wrap', marginTop: '24px' }}>
           <BrandItemStyled />
           <BrandItemStyled />

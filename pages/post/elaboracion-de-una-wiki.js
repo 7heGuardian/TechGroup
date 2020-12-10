@@ -34,11 +34,11 @@ export default function PostItem() {
   return (
     <>
       <Head>
-        <title>Elaboracion de una wiki</title>
+        <title>Elaboración de una wiki - Technogroup.</title>
       </Head>
 
       <PostPageLayout comments={comments}>
-        <h1 style={{ textAlign: 'center', fontSize: '28px' }}>Elaboracion de una wiki</h1> <small><Link href='/'><a>Ir al inicio</a></Link></small>
+        <h1 style={{ textAlign: 'center', fontSize: '28px' }}>Elaboración de una wiki</h1> <small><Link href='/'><a>Ir al inicio</a></Link></small>
         <MetaDataPostPage>Meta Description</MetaDataPostPage>
         <PostPageDescription>
           <p>
@@ -56,7 +56,7 @@ export default function PostItem() {
             Vestibulum velit ligula, pharetra sed mi.
           </p>
           <br />
-          <h3 style={{ fontSize: '24px', fontFamily: 'Playfair Display' }}>Subtitulo 1</h3>
+          <h3 style={{ fontSize: '24px' }}>Subtitulo 1</h3>
           <br />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
