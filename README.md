@@ -1,2 +1,1 @@
-# Proyecto informatica - Elaboracion deuna Wiki
-Newman Sanchez
+# Proyecto informatica - Elaboracion de una Wiki
