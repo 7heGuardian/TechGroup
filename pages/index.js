@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>📚 Elaboracion de una Wiki</title>
+        <title>Technogroup.</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

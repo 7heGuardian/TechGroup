@@ -37,7 +37,11 @@ export default function AppLayoutStyled({ children }) {
 
         body {
         line-height: 1;
-        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
         }
 
         ol, ul {

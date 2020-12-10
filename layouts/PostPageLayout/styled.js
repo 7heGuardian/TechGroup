@@ -1,9 +1,17 @@
 import styled from '@emotion/styled'
 
 export const BgHeaderPostPage = styled.div`
-  height: 200px;
+  height: 440px;
   width: 100%;
-  background-color: #eee;
+  background-color: #2B2D42;
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ), url('/1_DBff-fZ7TtXwf9r-Aem1_A.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 `
 
 export const PostPageDescription = styled.section`

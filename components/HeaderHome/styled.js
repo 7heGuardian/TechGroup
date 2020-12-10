@@ -16,7 +16,6 @@ export const HeaderHomeStyled = styled.header`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Playfair Display', serif;
   font-size: 144px;
   color: #fff;
   `

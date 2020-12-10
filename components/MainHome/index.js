@@ -11,7 +11,7 @@ export default function MainHome() {
           <h4>Etiquetas</h4>
 
           <ul style={{ marginTop: '20px', position: 'relative' }}>
-            <TagStyled>Tecnologia</TagStyled>
+            <TagStyled>Wiki</TagStyled>
           </ul>
         </TagSectionStyled>
 
