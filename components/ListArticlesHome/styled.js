@@ -24,6 +24,8 @@ export const ArticleStyled = styled.article`
 export const ListArticlesLayoutStyled = styled.section`
   height: 100%;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
 
   @media screen and (min-width: 320px) and (max-width: 900px) {
     grid-area: ListArticles;

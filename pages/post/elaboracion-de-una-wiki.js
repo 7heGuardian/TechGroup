@@ -40,7 +40,7 @@ export default function PostItem() {
       <PostPageLayout comments={comments}>
         <h1 style={{ textAlign: 'center', fontSize: '28px' }}>Elaboracion de una wiki</h1> <small><Link href='/'><a>Ir al inicio</a></Link></small>
         <MetaDataPostPage>Meta Description</MetaDataPostPage>
-        <PostPageDescription >
+        <PostPageDescription>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Curabitur porta eget neque at iaculis.
@@ -50,10 +50,13 @@ export default function PostItem() {
             Vestibulum velit ligula, pharetra sed mi.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             Curabitur porta eget neque at iaculis.
-            Vestibulum velit ligula, pharetra sed mi, Lorem ipsum dolor sit amet, consectetur adipiscing elit.Curabitur porta eget neque at iaculis.Vestibulum velit ligula, pharetra sed mi.
+            Vestibulum velit ligula, pharetra sed mi,
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Curabitur porta eget neque at iaculis.
+            Vestibulum velit ligula, pharetra sed mi.
           </p>
           <br />
-          <h3 style={{ fontSize: '20px' }}>Subtitulo 1</h3>
+          <h3 style={{ fontSize: '24px', fontFamily: 'Playfair Display' }}>Subtitulo 1</h3>
           <br />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
