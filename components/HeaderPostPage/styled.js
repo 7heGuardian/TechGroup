@@ -11,4 +11,10 @@ export const HeaderStyled = styled.header`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-width: 320px) and (max-width: 850px) {
+    width: 85%;
+    height: 300px;
+    margin-top: -215px;
+  }
 `

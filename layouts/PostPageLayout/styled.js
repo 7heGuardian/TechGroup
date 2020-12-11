@@ -15,12 +15,49 @@ export const BgHeaderPostPage = styled.div`
 `
 
 export const PostPageDescription = styled.section`
-  width: 80%;
+  width: 100%;
   height: 100%;
-  margin: 30px auto 0 auto;
+  margin: 24px auto 0 auto;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: justify;
+
+  & h2 {
+    font-size: 24px;
+    padding: 16px 0px;
+  }
+
+  & h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+  }
 
   & p {
-    line-height: 1.4;
+    padding: 8px 0px;
+  }
+
+  & b {
+    font-weight: 700;
+  }
+
+  & ul, ol {
+    padding: 0px 24px;
+    line-height: 1.5;
+  }
+
+  & ul > li {
+    list-style-type: disc;
+  }
+
+  & ol > li {
+    list-style-type: decimal;
+  }
+
+  & ul > li,
+    ol > li {
+      margin: 10px 0;
+      padding: 0 12px;
+      white-space: normal;
   }
 
   @media screen and (min-width: 320px) and (max-width: 500px){
@@ -37,12 +74,28 @@ export const PostPageDescription = styled.section`
   }
 `
 
-export const PostPageImageDescription = styled.figure`
+export const PostPageImageDescription = styled.section`
   width: 400px;
-  height: 300px;
-  background-color: #a5a5a5;
-  margin: 0 auto;
-  border-radius: 10px;
+  height: min-content;
+  margin: 16px auto;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+
+  @media screen and (min-width: 320px) and (max-width: 500px){
+    width: 300px;
+  }
+`
+
+export const PostPageImageContainer = styled.figure`
+  width: 400px;
+  height: min-content;
+  margin-bottom: 5px;
+
+  & img {
+    border-radius: 0px 16px;
+    object-fit: cover;
+  }
 
   @media screen and (min-width: 320px) and (max-width: 500px){
     width: 300px;
@@ -52,13 +105,16 @@ export const PostPageImageDescription = styled.figure`
 
 export const MetaDataPostPage = styled.section`
   width: 100%;
-  height: 30px;
+  height: 100%;
   margin-top: 30px;
-  border-radius: 3px;
-  border: 1px solid black;
+  border: 1px solid #8D99AE;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 8px 0px;
+  color: #000;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  text-indent: 24px;
 
   @media screen and (min-width: 320px) and (max-width: 800px){
     width: 95%;

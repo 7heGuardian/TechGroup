@@ -11,6 +11,7 @@ export const NavbarStyled = styled.section`
     border-color: #8D99AE;
     line-height: 60px;
     vertical-align: middle;
+    z-index: 10;
 
     & h1 {
         padding: 0px 8px;

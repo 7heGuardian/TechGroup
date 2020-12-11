@@ -1,7 +1,11 @@
 {
-  "name": "wiki-blog",
-  "version": "0.1.0",
+  "name": "techgroup",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "7heGuardian, ScriptKev"
+  },
+  "description": "Blog of TechGroup",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

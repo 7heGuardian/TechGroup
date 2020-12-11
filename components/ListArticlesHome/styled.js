@@ -33,9 +33,9 @@ export const ListArticlesLayoutStyled = styled.section`
 `
 
 export const ArticleThumbnail = styled.figure`
-  width: '240px';
-  height: '100%
-  borderRadius: '0px 16px';
+  width: 240px;
+  height: 100%;
+  border-radius: 0px 16px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
