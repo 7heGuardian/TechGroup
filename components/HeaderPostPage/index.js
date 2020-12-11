@@ -1,7 +1,5 @@
 import { HeaderStyled } from './styled'
 
-export default function HeaderPostPage() {
-  return (
-    <HeaderStyled />
-  )
-}
+const HeaderPostPage = () => <HeaderStyled />
+
+export default HeaderPostPage

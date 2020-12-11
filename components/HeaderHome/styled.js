@@ -18,4 +18,21 @@ export const HeaderHomeStyled = styled.header`
   background-size: cover;
   font-size: 144px;
   color: #fff;
-  `
+
+  & h1 {
+    margin-top: 30px;
+    transition: font-size ease-in-out 300ms;
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 1000px) {
+    font-size: 100px;
+  }
+
+  @media screen and (min-width: 400px) and (max-width: 699px) {
+    font-size: 60px;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 399px) {
+    font-size: 45px;
+  }
+`
