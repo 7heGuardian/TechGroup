@@ -28,7 +28,6 @@ export const PostPageDescription = styled.section`
   }
 
   & h3 {
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
   }
 

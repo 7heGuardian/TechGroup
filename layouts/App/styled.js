@@ -41,7 +41,8 @@ export default function AppLayoutStyled({ children }) {
         }
 
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Playfair Display', serif;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
         }
 
         ol, ul {

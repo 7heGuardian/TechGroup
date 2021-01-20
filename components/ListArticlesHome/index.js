@@ -18,7 +18,7 @@ export default function ListArticlesHome() {
             </ArticleThumbnail>
 
             <div style={{ width: '100%', height: 'min-content', margin: 'auto' }}>
-              <h2 style={{ fontFamily: 'Playfair Display', fontSize: '24px', marginBottom: '24px'}}>
+              <h2 style={{ fontFamily: 'Montserrat', fontSize: '24px', marginBottom: '24px'}}>
                 <Link href='/post/elaboracion-de-una-wiki'>
                   <a>Elaboracion de una wiki</a>
                 </Link>

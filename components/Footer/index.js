@@ -4,15 +4,9 @@ export default function Footer() {
   return (
     <FooterStyled>
       <BrandStyled>
-        <h1 style={{ fontSize: '32px', color: 'white' }}>Technogroup.</h1>
-        <div style={{ display: 'flex', flexWrap: 'wrap', marginTop: '24px' }}>
-          <BrandItemStyled />
-          <BrandItemStyled />
-          <BrandItemStyled />
-          <BrandItemStyled />
-        </div>
-        <p style={{ marginTop: '24px', textAlign: 'center' }}>© 2020 Technogroup. v1.0. Todos los derechos reservados.</p>
+        <h1>Technogroup.</h1>
       </BrandStyled>
+      <p>© 2020 Technogroup. v1.0. Todos los derechos reservados.</p>
     </FooterStyled>
   )
 }

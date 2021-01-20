@@ -2,26 +2,31 @@ import styled from '@emotion/styled'
 
 export const FooterStyled = styled.footer`
   width: 100%;
-  height: 180px;
-  background-color: #2B2D42;
+  padding: 40px 0px;
+  background-color: #000000;
   margin-top: 48px;
-  color: #8D99AE;
-  font-size: 16px;
-`
-
-export const BrandStyled = styled.section`
+  color: #454955;
   display: flex;
-  width: 100%;
-  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  & p {
+    font-size: 16px;
+    margin-top: 24px;
+  }
+
+`
+
+export const BrandStyled = styled.section`
+  font-size: 32px;
+  color: #FFFFFF;
 `
 
 export const BrandItemStyled = styled.i`
   height: 20px;
   width: 20px;
-  background-color: #a5a5a5;
+  background-color: #E5E5E5;
   border-radius: 50%;
   margin: 0 8px;
 `
