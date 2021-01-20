@@ -2,19 +2,25 @@ import styled from '@emotion/styled'
 
 export const NavbarStyled = styled.section`
     width: 100%;
-    height: 64px;
-    padding: 0px 16px;
+    z-index: 10;
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
+    padding: 0px 16px;
     border-bottom-style: solid;
     border-width: 2px;
-    border-color: #8D99AE;
-    line-height: 60px;
-    vertical-align: middle;
-    z-index: 10;
+    border-color: #E5E5E5;
 
     & h1 {
-        padding: 0px 8px;
-        display: inline-block;
+        cursor: pointer;
+        margin: 16px;
+        font-size: 16px;
+        color: #000000;
+    }
+
+    & p {
+        margin:16px;
     }
 `

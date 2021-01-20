@@ -1,5 +1,16 @@
 import styled from '@emotion/styled'
 
+export const ListArticlesLayoutStyled = styled.section`
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
+
+  @media screen and (min-width: 320px) and (max-width: 900px) {
+    grid-area: ListArticles;
+  }
+`
+
 export const ListArticlesStyled = styled.ul`
   width: 100%;
   /* height: 100%; */
@@ -18,17 +29,6 @@ export const ArticleStyled = styled.article`
     grid-template-columns: 1fr;
     grid-template-rows: 154px 1fr;
     justify-items: center;
-  }
-`
-
-export const ListArticlesLayoutStyled = styled.section`
-  height: 100%;
-  width: 100%;
-  font-family: 'Roboto', sans-serif;
-  color: #000;
-
-  @media screen and (min-width: 320px) and (max-width: 900px) {
-    grid-area: ListArticles;
   }
 `
 
