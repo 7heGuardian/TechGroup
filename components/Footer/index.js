@@ -6,7 +6,7 @@ export default function Footer() {
       <BrandStyled>
         <h1>Technogroup.</h1>
       </BrandStyled>
-      <p>© 2020 Technogroup. v1.0. Todos los derechos reservados.</p>
+      <p>© 2020 - 2021 Technogroup. v1.1. Todos los derechos reservados.</p>
     </FooterStyled>
   )
 }

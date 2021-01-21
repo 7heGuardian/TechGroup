@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 export const FooterStyled = styled.footer`
   width: 100%;
   padding: 40px 0px;
-  background-color: #000000;
+  background-color: #E5E5E5;
   margin-top: 48px;
   color: #454955;
   display: flex;
@@ -20,7 +20,7 @@ export const FooterStyled = styled.footer`
 
 export const BrandStyled = styled.section`
   font-size: 32px;
-  color: #FFFFFF;
+  color: #000000;
 `
 
 export const BrandItemStyled = styled.i`
