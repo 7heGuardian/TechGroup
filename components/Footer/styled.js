@@ -4,7 +4,6 @@ export const FooterStyled = styled.footer`
   width: 100%;
   padding: 40px 0px;
   background-color: #E5E5E5;
-  margin-top: 48px;
   color: #454955;
   display: flex;
   flex-direction: column;
@@ -19,6 +18,7 @@ export const FooterStyled = styled.footer`
 `
 
 export const BrandStyled = styled.section`
+  cursor: pointer;
   font-size: 32px;
   color: #000000;
 `

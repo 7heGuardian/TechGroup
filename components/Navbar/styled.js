@@ -9,6 +9,7 @@ export const NavbarStyled = styled.section`
     align-items: center;
     background-color: #FFFFFF;
     padding: 0px 16px;
+    
     border-bottom-style: solid;
     border-width: 2px;
     border-color: #E5E5E5;
